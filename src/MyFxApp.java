@@ -77,11 +77,11 @@ public class MyFxApp extends Application {
 
         });
 
-        radioButton1.setOnAction(actionEvent -> {
-       // value.set(255,0,0,0);
-            BackgroundFill myBackgroundFill = new BackgroundFill(value,null,null);
-            Background myBackground = new Background(myBackgroundFill);
-            vBox1.setBackground(myBackground);
+       radioButton1.setOnAction(actionEvent ->{
+           value = Color.RED;
+           BackgroundFill myBackgroundFill = new BackgroundFill(value,null,null);
+           Background myBackground = new Background(myBackgroundFill);
+           vBox1.setBackground(myBackground);
         });
 
         Scene myScene1 = new Scene(vBox1, 800,800);
